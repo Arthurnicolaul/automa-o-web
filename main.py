@@ -46,7 +46,7 @@ def main(page: ft.Page):
             umidade = navegador.find_element(By.ID, "wob_hm").text
             vento = navegador.find_element(By.ID, "wob_ws").text
 
-            tempertura_c.value = f"de {input_cidade.value} {temperatura_google.text}°C"
+            tempertura_c.value = f"{input_cidade.value} = {temperatura_google.text}°C"
             condicao_clima.value = f"Condição: {condicao_tempo}"
             umidade_text.value = f"Umidade: {umidade}"
             vento_text.value = f"Vento: {vento}"
